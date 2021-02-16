@@ -1,14 +1,15 @@
 .banner {
     background: url("/assets/logo.jpg") no-repeat;
-    height: 110vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    padding-bottom: 10vmin; 
 }
 
 .banner .titel {
     text-align: center;
-    padding-top: 200px;
+   padding-top: 10vmax;
 }
 
 .banner .titel h1 {
