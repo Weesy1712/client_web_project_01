@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  <title>Responsive Sticky Navbar | CodingNepal</title> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/libs/navbar.css">
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="/libs/w3.css">
     <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar-custom">
         <div class="content">
             <div class="logo">
                 <a href="#">
                     <div class="logotitel">MMag. Petra Schurian-Pokorny</div>
                     <div class="underlogo">Praxis für die Seelische Freude</div>
                 </a>
+
             </div>
             <ul class="menu-list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
                 <li><a href="/index.html">HOME</a></li>
-                <li><a href="#" style="border-style: solid ; border-color: #fff;">ÜBER MICH</a></li>
+                <li><a href="/aboutme/index.html">ÜBER MICH</a></li>
                 <li><a href="#">DIAGNOSTIK</a></li>
                 <li><a href="#">BEHANDLUNG</a></li>
                 <li><a href="#">KONTAKT</a></li>
@@ -36,32 +38,43 @@
             </div>
         </div>
     </nav>
-    <div class="banner"></div>
-    <div class="about">
-        <div class="content">
-            <div class="row">
-                <!-- Stuck here -->
+
+
+    <div class="class1">
+        <div class="row">
+            <div class="col-sm-4">
+
             </div>
-            <!--  <img src="/assets/logo.jpg" alt="logo" class="logo">-->
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="/assets/logo.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-4">
 
+            </div>
         </div>
+    </div>
 
-        <script>
-            const body = document.querySelector("body");
-            const navbar = document.querySelector(".navbar");
-            const menuBtn = document.querySelector(".menu-btn");
-            const cancelBtn = document.querySelector(".cancel-btn");
-            menuBtn.onclick = () => {
-                navbar.classList.add("show");
-                menuBtn.classList.add("hide");
-                body.classList.add("disabled");
-            }
-            cancelBtn.onclick = () => {
-                body.classList.remove("disabled");
-                navbar.classList.remove("show");
-                menuBtn.classList.remove("hide");
-            }
-            window.onscroll = () => {
-                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-            }
-        </script>
+
+
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar-custom");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>

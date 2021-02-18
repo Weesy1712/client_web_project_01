@@ -30,7 +30,7 @@
     padding: 0 100px;
 }
 
-.navbar {
+.navbar-custom {
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -39,30 +39,30 @@
     background: rgb(78, 78, 78);
 }
 
-.navbar.sticky {
+.navbar-custom.sticky {
     background: #1b1b1b;
     padding: 10px 0;
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .content {
+.navbar-custom .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar .logo a {
+.navbar-custom .logo a {
     color: #fff;
     font-size: 24px;
     font-weight: 200;
     text-decoration: none;
 }
 
-.navbar .logo .underlogo {
+.navbar-custom .logo .underlogo {
     font-size: 16px;
 }
 
-.navbar .menu-list {
+.navbar-custom .menu-list {
     display: inline-flex;
     padding-left: 50px;
 }
@@ -139,7 +139,7 @@
     .icon.hide {
         display: none;
     }
-    .navbar .menu-list {
+    .navbar-custom .menu-list {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -152,18 +152,18 @@
         background: #222;
         transition: all 0.3s ease;
     }
-    .navbar.show .menu-list {
+    .navbar-custom.show .menu-list {
         left: 0%;
     }
-    .navbar .menu-list li {
+    .navbar-custom .menu-list li {
         margin-top: 45px;
     }
-    .navbar .menu-list li a {
+    .navbar-custom .menu-list li a {
         font-size: 23px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    .navbar.show .menu-list li a {
+    .navbar-custom.show .menu-list li a {
         margin-left: 0px;
     }
 }
