@@ -1,11 +1,10 @@
-/*.banner {
+.banner {
     background: url("/assets/logo.jpg") no-repeat;
     height: 110vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-*/
 
 html {
     overflow-x: hidden;
@@ -13,7 +12,14 @@ html {
 
 .banner .titel {
     text-align: center;
-    padding-top: 200px;
+    padding-top: 300px;
+    background-color: rgba(51, 51, 51, 0.671);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    color: #fff;
 }
 
 .banner .titel h1 {
@@ -39,16 +45,33 @@ html {
     padding-top: 50px;
 }
 
-.class1 .logo {
-    padding-top: 500px;
-}
-
 .card {
     margin: auto;
     width: 85%;
     margin-bottom: 5vmin;
     min-height: 400px;
     box-shadow: 2px 1px 20px 2px rgb(150, 150, 150);
+}
+
+.class1 {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.class1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.abstand-10 {
+    height: 20px;
+}
+
+.class2 .subheading {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 @media (max-width: 1280px) {

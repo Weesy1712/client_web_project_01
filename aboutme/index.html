@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/libs/navbar.css">
     <link rel="stylesheet" href="/libs/bootstrap.min.css">
     <link rel="stylesheet" href="/libs/w3.css">
@@ -41,40 +41,43 @@
 
 
     <div class="class1">
-        <div class="row">
-            <div class="col-sm-4">
 
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <img src="/assets/logo.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-sm-4">
+        <img src="/assets/logo.jpg " alt=" " width="300 " height="244 " />
 
-            </div>
-        </div>
+        <hr />
+
+        <h3><span style="color: #003366; ">MMag. Petra Schurian-Pokorny </span></h3>
+        <div class="abstand-10"></div>
+        <img src="/assets/bild.jpg " alt=" " width="199 " height="300 " />
+        <div class="abstand-10"></div>
+        <div>geboren 1975 in Klagenfurt am Wörthersee, </div>
+        <div>verheiratet, Mutter von drei Kindern </div>
+        <hr />
+
+    </div>
+    <div class="class2">
+        <h4 class="subheading" ">AUSBILDUNGEN</h4>
     </div>
 
 
 
 
     <script>
-        const body = document.querySelector("body");
-        const navbar = document.querySelector(".navbar-custom");
-        const menuBtn = document.querySelector(".menu-btn");
-        const cancelBtn = document.querySelector(".cancel-btn");
+        const body = document.querySelector("body ");
+        const navbar = document.querySelector(".navbar-custom ");
+        const menuBtn = document.querySelector(".menu-btn ");
+        const cancelBtn = document.querySelector(".cancel-btn ");
         menuBtn.onclick = () => {
-            navbar.classList.add("show");
-            menuBtn.classList.add("hide");
-            body.classList.add("disabled");
+            navbar.classList.add("show ");
+            menuBtn.classList.add("hide ");
+            body.classList.add("disabled ");
         }
         cancelBtn.onclick = () => {
-            body.classList.remove("disabled");
-            navbar.classList.remove("show");
-            menuBtn.classList.remove("hide");
+            body.classList.remove("disabled ");
+            navbar.classList.remove("show ");
+            menuBtn.classList.remove("hide ");
         }
         window.onscroll = () => {
-            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            this.scrollY > 20 ? navbar.classList.add("sticky ") : navbar.classList.remove("sticky ");
         }
     </script>
