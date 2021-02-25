@@ -50,6 +50,18 @@ html {
     height: 20px;
 }
 
+.dot {
+    border-radius: 100%;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.yellow {
+    background-color: rgb(255, 251, 0);
+}
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 
