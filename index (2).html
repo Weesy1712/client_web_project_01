@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/libs/navbar.css">
+    <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar-custom">
+        <div class="content">
+            <div class="logo">
+                <a href="/index.html">
+                    <div class="logotitel">MMag. Petra Schurian-Pokorny</div>
+                    <div class="underlogo">Praxis für die Seelische Freude</div>
+                </a>
+
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/aboutme/index.html">ÜBER MICH</a></li>
+                <li><a href="/diagnostik/index.html">DIAGNOSTIK</a></li>
+                <li><a href="/behandlung/index.html">BEHANDLUNG</a></li>
+                <li><a href="#">KONTAKT</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+
+        <div class="titel">
+            <div class="titel4">
+                <h1>Herzlich Wilkommen!</h1>
+            </div>
+            <div class="titel1">
+                <h3>Klinisch-psychologische Praxis</h3>
+                <h3>Diagnostik - Beratung - Behandlung</h3>
+            </div>
+            <div class="titel2">
+                <h1>MMag. Petra Schurian-Pokorny</h1>
+            </div>
+            <div class="titel3">
+
+                <h2>Klinische Psychologin,</h2>
+                <h2>Gesundheitspsychologin,</h2>
+                <h2>Sportpsychologin,</h2>
+                <h2>Wahlpsychologin aller Klassen</h2>
+                <h2>Psychotherapeutin in Ausbildung unter Supervision (KBT)</h2>
+                <h2>Heil- und Sonderpädagogin</h2>
+                <h2>Bio-/Neurofeedbacktherapeutin</h2>
+                <h2>Psychologische Traumtherapeutin</h2>
+                <h2>(EMDR/IBT))</h2>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="about">
+        <div class="content">
+
+        </div>
+
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar-custom");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
