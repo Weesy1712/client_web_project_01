@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +50,6 @@
     justify-content: space-between;
 }
 
-
 .navbar-custom .menu-list {
     display: inline-flex;
     padding-left: 50px;
@@ -101,20 +99,19 @@
     top: 20px;
 }
 
+
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
 @media screen and (min-width: 601px) {
     body.disabled {
         overflow: hidden;
     }
-
     .icon {
         display: block;
     }
-
     .icon.hide {
         display: none;
     }
-
     .navbar-custom .menu-list {
         position: fixed;
         height: 100vh;
@@ -128,51 +125,44 @@
         background: #222;
         transition: all 0.3s ease;
     }
-
     .navbar-custom.show .menu-list {
         left: 0%;
     }
-
     .navbar-custom .menu-list li {
         margin-top: 45px;
     }
-
     .navbar-custom .menu-list li a {
         font-size: 23px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
     .navbar-custom.show .menu-list li a {
         margin-left: 0px;
     }
-
     .navbar-custom .logo .logotitel {
         color: #fff;
         font-size: 24px;
         font-weight: 200;
         text-decoration: none;
     }
-
     .navbar-custom .logo .underlogo {
         font-size: 16px;
     }
 }
 
+
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
 @media screen and (max-width: 600px) {
     body.disabled {
         overflow: hidden;
     }
-
     .icon {
         display: block;
     }
-
     .icon.hide {
         display: none;
     }
-
     .navbar-custom .menu-list {
         position: fixed;
         height: 100vh;
@@ -186,38 +176,30 @@
         background: #222;
         transition: all 0.3s ease;
     }
-
     .navbar-custom.show .menu-list {
         left: 0%;
     }
-
     .navbar-custom .menu-list li {
         margin-top: 45px;
     }
-
     .navbar-custom .menu-list li a {
         font-size: 23px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-
     .navbar-custom.show .menu-list li a {
         margin-left: 0px;
     }
-
     .navbar-custom .logo .logotitel {
         color: #fff;
         font-size: 18px;
         font-weight: 200;
         text-decoration: none;
     }
-
     .navbar-custom .logo .underlogo {
         font-size: 11px;
     }
 }
-
-
 
 .content {
     padding: 0 40px;

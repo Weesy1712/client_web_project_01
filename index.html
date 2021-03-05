@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/libs/navbar.css">
     <link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
@@ -69,26 +70,85 @@
 
     </div>
     <div class="about">
-        <div class="content">
+        <div class="content2">
+            <footer>
+                <div class="container-fluid p-0" id="about">
+                    <div class="row text-left">
+                        <div class="col-md-5  col-md-5">
+                            <a class="navbar-brand" href="#"> MMag.a Petra SCHURIAN-POKORNY</a>
 
-        </div>
+                            <p class="text-muted"> I had too much freetime in the Corona-Quaratine so i just made this Website
+                            </p>
+                            <p class="pt-4 text-muted">
+                                Klagenfurt 29.März 2020
+                            </p>
+                            <span> Tayari</span>
+                        </div>
+                        <div class="col-md-5">
 
-        <script>
-            const body = document.querySelector("body");
-            const navbar = document.querySelector(".navbar-custom");
-            const menuBtn = document.querySelector(".menu-btn");
-            const cancelBtn = document.querySelector(".cancel-btn");
-            menuBtn.onclick = () => {
-                navbar.classList.add("show");
-                menuBtn.classList.add("hide");
-                body.classList.add("disabled");
-            }
-            cancelBtn.onclick = () => {
-                body.classList.remove("disabled");
-                navbar.classList.remove("show");
-                menuBtn.classList.remove("hide");
-            }
-            window.onscroll = () => {
-                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-            }
-        </script>
+                            <form action="newsletter.php" target="_blank" method="post">
+                                <h4 class="text-light">Newsletter </h4>
+                                <p class="text-muted">Stay Updated</p>
+                                <form class="form-inline">
+                                    <div class="col pl-">
+                                        <div class="input-group pr-5">
+                                            <input type="text" class="form-control bg-dark text-white" placeholder="Email" id="userInput" name="email">
+                                            <div class="input-group-prepent">
+                                                <button type="submit" class="input-group-text" onclick="bestätigung()">
+                                                    Subscribe
+        
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <script>
+                                    function bestätigung() {
+                                        alert(
+                                            "You have subscribed the newsletter! If you want to unsub just contact! "
+                                        );
+                                    }
+                                </script>
+                        </div>
+
+                        <div class="col-md-2">
+
+
+                            <h4 class="text-light">Kontakt</h4>
+                            <p>
+                                <h6 style="color: white; ">Tel.: <a href="tel:+436604121292" target="_blank" style="color:rgb(0, 132, 255);">
+                                    +43 660-4121292</a></h6>
+
+                            </p>
+
+
+
+
+                        </div>
+                    </div>
+
+            </footer>
+            </div>
+
+
+
+            <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar-custom");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = () => {
+                    navbar.classList.add("show");
+                    menuBtn.classList.add("hide");
+                    body.classList.add("disabled");
+                }
+                cancelBtn.onclick = () => {
+                    body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                }
+                window.onscroll = () => {
+                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+            </script>
+</body>
