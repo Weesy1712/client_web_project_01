@@ -81,10 +81,13 @@ html {
     .class1 ul {
         padding-left: 50px;
         padding-right: 50px;
-        font-size: 14px;
+        font-size: 18px;
     }
     .class1 li {
         padding-bottom: 20px;
+    }
+    .class2 {
+        font-size: 18px;
     }
     .banner .titel {
         text-align: center;
@@ -124,6 +127,9 @@ html {
     }
     .class1 li {
         padding-bottom: 10px;
+    }
+    .class2 {
+        font-size: 14px;
     }
     .banner .titel {
         text-align: center;
