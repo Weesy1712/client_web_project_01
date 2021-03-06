@@ -148,6 +148,13 @@
     .navbar-custom .logo .underlogo {
         font-size: 16px;
     }
+    footer {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 5vmin;
+    }
+    footer p {
+        font-size: 18px;
+    }
 }
 
 
@@ -198,6 +205,14 @@
     }
     .navbar-custom .logo .underlogo {
         font-size: 11px;
+    }
+    footer {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 5vmin;
+        color: #fff;
+    }
+    footer p {
+        font-size: 14px;
     }
 }
 

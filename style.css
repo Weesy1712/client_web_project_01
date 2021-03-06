@@ -34,29 +34,8 @@
         background: rgba(0, 0, 0, 0.8);
         padding: 5vmin;
     }
-    footer span {
-        color: var(--color1);
-    }
-    footer input {
-        border: none !important;
-    }
-    footer input::placeholder {
-        color: white !important;
-    }
-    footer.input-group .input-group-text {
-        background: var(--color1);
-        border: none;
-        height: 100%;
-        width: 100%;
-        color: white;
-    }
-    footer button:hover {
-        background-color: #fff;
-        color: var(--color1);
-        box-shadow: 10px 5px 100px 10px var(--color1);
-    }
-    footer .navbar-brand {
-        font-size: 30px;
+    footer p {
+        font-size: 18px;
     }
 }
 
@@ -85,29 +64,9 @@
     footer {
         background: rgba(0, 0, 0, 0.8);
         padding: 5vmin;
+        color: #fff;
     }
-    footer span {
-        color: var(--color1);
-    }
-    footer input {
-        border: none !important;
-    }
-    footer input::placeholder {
-        color: white !important;
-    }
-    footer.input-group .input-group-text {
-        background: var(--color1);
-        border: none;
-        height: 100%;
-        width: 100%;
-        color: white;
-    }
-    footer button:hover {
-        background-color: #fff;
-        color: var(--color1);
-        box-shadow: 10px 5px 100px 10px var(--color1);
-    }
-    footer .navbar-brand {
-        font-size: 16px;
+    footer p {
+        font-size: 14px;
     }
 }

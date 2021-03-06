@@ -30,7 +30,7 @@
                 <li><a href="/aboutme/index.html">ÜBER MICH</a></li>
                 <li><a href="/diagnostik/index.html">DIAGNOSTIK</a></li>
                 <li><a href="/behandlung/index.html">BEHANDLUNG</a></li>
-                <li><a href="#">KONTAKT</a></li>
+                <li><a href="#footer">KONTAKT</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -89,26 +89,60 @@
 
 
 
+            <footer id="footer">
+                <div class="container-fluid p-0" id="about">
+                    <div class="row text-left">
+                        <div class="col-md-5  col-md-5">
+                            <h5 class="text-light"> MMag.a Petra SCHURIAN-POKORNY</h5>
 
-        </div>
 
-        <script>
-            const body = document.querySelector("body");
-            const navbar = document.querySelector(".navbar-custom");
-            const menuBtn = document.querySelector(".menu-btn");
-            const cancelBtn = document.querySelector(".cancel-btn");
-            menuBtn.onclick = () => {
-                navbar.classList.add("show");
-                menuBtn.classList.add("hide");
-                body.classList.add("disabled");
-            }
-            cancelBtn.onclick = () => {
-                body.classList.remove("disabled");
-                navbar.classList.remove("show");
-                menuBtn.classList.remove("hide");
-            }
-            window.onscroll = () => {
-                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-            }
-        </script>
+
+                        </div>
+                        <div class="col-md-5">
+
+                            <form action="newsletter.php" target="_blank" method="post">
+                                <h5 class="text-light">Adresse </h5>
+                                <p class="text-light">9020 Klagenfurt am Wörthersee, Hoffmanngasse 15/1d</p>
+
+
+                        </div>
+
+                        <div class="col-md-2">
+
+
+                            <h5 class="text-light">Kontakt</h5>
+
+                            <p style="color: white; ">Tel.: <a href="tel:+436604121292" target="_blank" style="color:rgb(0, 132, 255);">
+                                    +43 660-4121292</a></p>
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+            </footer>
+            </div>
+
+            <script>
+                const body = document.querySelector("body");
+                const navbar = document.querySelector(".navbar-custom");
+                const menuBtn = document.querySelector(".menu-btn");
+                const cancelBtn = document.querySelector(".cancel-btn");
+                menuBtn.onclick = () => {
+                    navbar.classList.add("show");
+                    menuBtn.classList.add("hide");
+                    body.classList.add("disabled");
+                }
+                cancelBtn.onclick = () => {
+                    body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                }
+                window.onscroll = () => {
+                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+                }
+            </script>
 </body>
