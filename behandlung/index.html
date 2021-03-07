@@ -30,7 +30,7 @@
                 <li><a href="/aboutme/index.html">ÜBER MICH</a></li>
                 <li><a href="/diagnostik/index.html">DIAGNOSTIK</a></li>
                 <li><a href="/behandlung/index.html">BEHANDLUNG</a></li>
-                <li><a href="#footer">KONTAKT</a></li>
+                <li><a class="contact-btn" href="#footer">KONTAKT</a></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
@@ -188,12 +188,18 @@
                 const navbar = document.querySelector(".navbar-custom");
                 const menuBtn = document.querySelector(".menu-btn");
                 const cancelBtn = document.querySelector(".cancel-btn");
+                const contactBtn = document.querySelector(".contact-btn");
                 menuBtn.onclick = () => {
                     navbar.classList.add("show");
                     menuBtn.classList.add("hide");
                     body.classList.add("disabled");
                 }
                 cancelBtn.onclick = () => {
+                    body.classList.remove("disabled");
+                    navbar.classList.remove("show");
+                    menuBtn.classList.remove("hide");
+                }
+                contactBtn.onclick = () => {
                     body.classList.remove("disabled");
                     navbar.classList.remove("show");
                     menuBtn.classList.remove("hide");
