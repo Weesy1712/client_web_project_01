@@ -50,6 +50,10 @@ html {
     height: 20px;
 }
 
+.fat {
+    font-weight: 400;
+}
+
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 

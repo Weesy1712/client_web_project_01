@@ -18,7 +18,7 @@
             <div class="logo">
                 <a href="/index.html">
                     <div class="logotitel">MMag. Petra Schurian-Pokorny <img src="/assets/minilogo.png" alt=""></div>
-                    <div class="underlogo">Klinisch-psychologische & psychotherapeutische Praxis - "klips"</div>
+                    <div class="underlogo">Klinisch-psychologische & psychotherapeutische Praxis</div>
                 </a>
 
             </div>
@@ -66,10 +66,8 @@
                         <div class="class2">
                             <div class="abstand-10"></div>
                             Mit Hilfe der klinisch-psychologischen Diagnostik sollen Entwicklungsverzögerungen oder auch mögliche Ursachen für sozio-emotionale Schwierigkeiten festgestellt werden. Sie besteht im systematischen Sammeln, Auswerten und Interpretieren von Informationen
-                            über die psychischen Spezifika einer Person in der aktuellen Lebenssituation vor dem Hintergrund der eigenen Lebensbiografie. Sie ist damit etwas anderes und mehr als die bloße Anwendung unterschiedlicher Testverfahren (Intelligenztests,
-                            Entwicklungstests, Leistungstests, Persönlichkeitstests, Medizin-psychologische Verfahren, projektive Verfahren, uvm.). Die daraus resultierenden Schlussfolgerungen und konkreten Empfehlungen für Therapie, Behandlung, Beratung
-                            und Rehabilitation werden abhängig von den individuellen Ressourcen der betroffenen Person und den Ressourcen der Umwelt abgegeben. Klinische PsychologInnen können auf Grund ihrer interdisziplinären Ausbildung im klinikartigen
-                            Setting erkennen, wann eine Psychotherapie, klinisch-psychologische Behandlung oder Beratung indiziert ist und sie sind gesetzlich verpflichtet, an geeignete Personen zu überweisen.
+                            über die psychischen Spezifika einer Person in der aktuellen Lebenssituation vor dem Hintergrund der eigenen Lebensbiografie. Klinische PsychologInnen können auf Grund ihrer interdisziplinären Ausbildung im klinikartigen Setting
+                            erkennen, wann eine Psychotherapie, klinisch-psychologische Behandlung oder Beratung indiziert ist und sie sind gesetzlich verpflichtet, an geeignete Personen zu überweisen.
 
 
                             <div class="abstand-10"></div>
@@ -91,65 +89,33 @@
 
 
             <footer id="footer">
-                <div class="container-fluid p-0" id="about">
-                    <div class="row text-left">
-                        <div class="col-md-5  col-md-5">
-                            <h5 class="text-light"> MMag.a Petra Schurian-Pokorny</h5>
-
-
-
-                        </div>
-                        <div class="col-md-5">
-
-                            <form action="newsletter.php" target="_blank" method="post">
-                                <h5 class="text-light">Adresse </h5>
-                                <p class="text-light">9020 Klagenfurt am Wörthersee, Hoffmanngasse 15/1d</p>
-
-
-                        </div>
-
-                        <div class="col-md-2">
-
-
-                            <h5 class="text-light">Kontakt</h5>
-
-                            <p class="text-light" style="color: white; ">Tel.: <a href="tel:+436604121292" target="_blank" style="color:rgb(0, 132, 255);">
-                                    +43 660-4121292</a></p>
-
-
-
-
-
-
-                        </div>
-                    </div>
 
             </footer>
-            </div>
+        </div>
 
-            <script>
-                const body = document.querySelector("body");
-                const navbar = document.querySelector(".navbar-custom");
-                const menuBtn = document.querySelector(".menu-btn");
-                const cancelBtn = document.querySelector(".cancel-btn");
-                const contactBtn = document.querySelector(".contact-btn");
-                menuBtn.onclick = () => {
-                    navbar.classList.add("show");
-                    menuBtn.classList.add("hide");
-                    body.classList.add("disabled");
-                }
-                cancelBtn.onclick = () => {
-                    body.classList.remove("disabled");
-                    navbar.classList.remove("show");
-                    menuBtn.classList.remove("hide");
-                }
-                contactBtn.onclick = () => {
-                    body.classList.remove("disabled");
-                    navbar.classList.remove("show");
-                    menuBtn.classList.remove("hide");
-                }
-                window.onscroll = () => {
-                    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-                }
-            </script>
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar-custom");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            const contactBtn = document.querySelector(".contact-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            contactBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
 </body>
