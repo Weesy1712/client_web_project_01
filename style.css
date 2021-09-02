@@ -30,6 +30,9 @@
     .banner .titel3 {
         padding-top: 50px;
     }
+    .text-light {
+        font-weight: 200;
+    }
     footer {
         background: rgba(0, 0, 0, 0.8);
         padding: 5vmin;
@@ -60,6 +63,9 @@
     }
     .banner .titel3 {
         padding-top: 20px;
+    }
+    .text-light {
+        font-weight: 200;
     }
     footer {
         background: rgba(0, 0, 0, 0.8);
