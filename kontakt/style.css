@@ -1,5 +1,5 @@
 .banner {
-    background: url("/assets/logo.jpg") no-repeat;
+    background: url("logo.jpg") no-repeat;
     height: 110vh;
     background-size: cover;
     background-position: center;
