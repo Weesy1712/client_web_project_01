@@ -164,3 +164,46 @@ html {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media screen and (max-height:1000px) {
+    .class1 .heading {
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .class1 ul {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 14px;
+    }
+    .class1 li {
+        padding-bottom: 10px;
+    }
+    .class2 {
+        font-size: 14px;
+    }
+    .banner .titel {
+        text-align: center;
+        padding-top: 120px;
+        background-color: rgba(51, 51, 51, 0.671);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110vh;
+        color: #fff;
+    }
+    .text-light {
+        font-weight: 200;
+    }
+    footer {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 5vmin;
+        color: #fff;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
