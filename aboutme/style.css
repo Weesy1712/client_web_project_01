@@ -148,7 +148,7 @@ html {
     padding-bottom: 50px;
 }
 
-@media screen and (max-height:1000px) {
+@media screen and (max-height:800px) {
     .titel img {
         width: 199px;
         height: 300px;
